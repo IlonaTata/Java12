@@ -1,4 +1,11 @@
 public class PosterManager {
+
+    private PosterRepository repo;
+
+    public PosterManager(PosterRepository repo) {
+        this.repo = repo;
+    }
+
     private String[] films = new String[0];
     private int limit;
 
